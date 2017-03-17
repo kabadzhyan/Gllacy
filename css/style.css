@@ -1,0 +1,186 @@
+body {
+	color: #fff;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.menu .main-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.menu nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu .user-nav {
+	display: flex;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+}
+
+.main-menu li {
+	margin-right: 10px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu .log-in {
+	position: relative;
+}
+
+.menu .search-btn {
+	position: relative;
+	/*width: 32px;
+	height: 32px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 50%;
+	cursor: pointer;*/
+}
+
+.search-btn .search-label {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -7px;
+	left: -17px;
+	transform: translate(-50%);
+	background: rgba(255,255,255,0.2) url(../img/search.png) no-repeat 50% 50%;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.menu .enter-form {
+	display: none;
+	position: absolute;
+}
+
+.log-in-btn,
+.shopping-cart .cart {
+	padding: 8px 20px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 16px;
+}
+
+.log-in-btn:hover + .enter-form {
+	display: block;
+}
+
+.search-btn input {
+	display: none;
+	position: absolute;
+}
+
+.search-label:hover ~ input[type="search"] {
+	display: block;
+}
+
+.working-info {
+	text-align: right;
+	font-weight: 700;
+}
+
+.working-info p:first-child {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.working-info p:last-child {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.main-stage .slide {
+	display: none;
+	margin-top: 300px;
+	text-align: center;
+}
+
+.slide p {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	padding: 0 230px; 
+}
+
+.slide .give-me-btn {
+	text-decoration: none;
+	color: #fff;
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+	background-image: linear-gradient(to bottom, #f26843, #e74a35);
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	padding: 9px 31px 10px 31px;
+	border-radius: 50px;
+}
+
+#btn-1:checked ~ .site-wrapper {
+	background: #849d8f url(../img/ice-cream1.png) no-repeat top center;
+}
+
+#btn-2:checked ~ .site-wrapper {
+	background: #8996a6 url(../img/ice-cream2.png) no-repeat top center;
+}
+
+#btn-3:checked ~ .site-wrapper {
+	background: #9d8b84 url(../img/ice-cream3.png) no-repeat top center;
+}
+
+#btn-1:checked ~ .site-wrapper #slide-1,
+#btn-2:checked ~ .site-wrapper #slide-2,
+#btn-3:checked ~ .site-wrapper #slide-3 {
+	display: block;
+}
+
+.slide-btns label {
+	display: inline-block;
+	content: "";
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+.slide-btns label:hover {
+	background-color: rgba(255,255,255,0.5);
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+	background-color: rgb(255,255,255);
+}
+
+
+body input[name="toggle"] {
+	display: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+

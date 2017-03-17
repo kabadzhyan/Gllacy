@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	  <meta charset="utf-8">
+	  <title>HTML Academy: Gllacy</title>
+	  <link href="css/normalize.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	</head>
+	<body>
+		<input type="radio" name="toggle" id="btn-1" >
+		<input type="radio" name="toggle" id="btn-2" checked>
+		<input type="radio" name="toggle" id="btn-3">
+		<div class="site-wrapper">
+			<div class="container">
+				<header class="menu">
+					<nav>
+						<a class="logo"><img src="img/logo.png"></a>
+						<ul class="main-menu">
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">О Компании</a></li>
+						</ul>
+						<div class="user-nav">
+							<div class="search-btn">
+								<label for="search" class="search-label"></label>
+								<input type="search" name="search" id="search">
+							</div>
+							<div class="log-in">
+								<a href="#" class="log-in-btn">Вход</a>
+								<form class="enter-form" method="post">
+									<input type="text" name="name" id="name">
+									<label for="name">Имя пользователя</label>
+									<input type="password" name="pass" id="pass">
+									<label for="pass">Пароль</label>
+									<input type="submit" name="enter-btn" id="enter-btn" value="Войти">
+								</form>
+							</div>
+							<div class="shopping-cart">
+								<a href="#" class="cart">Пусто</a>
+							</div>
+						</div>
+					</nav>
+				</header>
+				<main>
+					<div class="container">
+						<div class="working-info">
+							<p>С 10 до 20, ежедневно</p>
+							<p>8 812 450-25-25</p>
+						</div>
+						<div class="main-stage">
+							<div class="slide" id="slide-1">
+								<p>Крем-брюле и пломбир с малиновым джемом</p>
+								<a class="give-me-btn" href="#">Давайте оба!</a>
+							</div>
+							<div class="slide" id="slide-2">
+								<p>Шоколадный пломбир и лимонный сорбет</p>
+								<a class="give-me-btn" href="#">Давайте оба!</a>
+							</div>
+							<div class="slide" id="slide-3">
+								<p>Пломбир с помадкой и клубничный щербет</p>
+								<a class="give-me-btn" href="#">Давайте оба!</a>
+							</div>
+							<div class="slide-btns">
+								<label for="btn-1"></label>
+								<label for="btn-2"></label>
+								<label for="btn-3"></label>
+							</div>
+						</div>
+					</div>
+				</main>
+				<footer>
+				</footer>
+			<div>
+		</div>
+	</body>
+</html>
