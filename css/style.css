@@ -13,6 +13,7 @@ body {
 
 .logo {
 	margin-top: 0px;
+	border-bottom: none;
 }
 
 .menu .main-menu {
@@ -28,6 +29,10 @@ body {
 	line-height: 18px;
 	font-weight: 700;
 	margin-top: -2px;
+}
+
+.main-menu a{
+	border-bottom: 1px solid #a9bbb1;
 }
 
 .menu nav {
@@ -50,7 +55,7 @@ body {
 .menu a {
 	text-decoration: none;
 	color: #fff;
-	    margin-top: 9px;
+	margin-top: 9px;
 }
 
 .menu .log-in {
@@ -298,6 +303,7 @@ p {
 	margin: -11px 17px 22px -11px;
 	padding: 10px;
 	border-radius: 10px;
+	text-align: center;
 }
 
 .best-item:last-child{
@@ -322,14 +328,13 @@ p {
 }
 
 .best-item .description {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500px;
 	color: #fff;
 	margin-bottom: 10px;
+	border-bottom: 1px solid #a9bbb1;
+	text-decoration: none;
 }
 
 .best-item:before {
@@ -670,6 +675,11 @@ footer .container {
 .links a{
 	display: block;
 	color: #fff;
+	text-decoration: none;
+}
+
+.links span {
+	border-bottom: 1px solid #9eb2a7
 }
 
 .copyright {
