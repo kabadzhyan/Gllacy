@@ -71,58 +71,6 @@ body {
 	height: 32px;
 }
 
-.menu .enter-wrap {
-	display: none;
-	position: absolute;
-	top: 30px;
-    right: 0;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-	background-color: #f8f7f4;
-	box-sizing: border-box;
-	border-radius: 5px;
-	padding: 20px 15px;
-}
-
-.log-in-btn,
-.shopping-cart .cart {
-	background-color: rgba(255,255,255,0.2);
-	border-radius: 16px;
-	position: relative;
-	margin-left: 10px;
-}
-
-.log-in-btn {
-	padding: 8px 17px 8px 43px;
-}
-
-.shopping-cart .cart {
-	padding: 8px 35px 8px 43px;
-}
-
-.shopping-cart .cart:before {
-	position: absolute;
-	content: "";
-	width: 21px;
-	height: 20px;
-	background: url(../img/cart.png) no-repeat;
-	top: 6px;
-    left: 16px;
-}
-
-.log-in-btn:before {
-	position: absolute;
-	content: "";
-	width: 21px;
-	height: 19px;
-	background: url(../img/log-in.png) no-repeat;
-	top: 6px;
-    left: 16px;
-}
-
-.log-in:hover  .enter-wrap {
-	display: block;
-}
-
 .search-btn {
 	position: relative;
 	margin-top: -18px;
@@ -185,6 +133,136 @@ body {
 .search-btn:hover .search-form {
 	display: block;
 }
+
+.menu .enter-wrap {
+	display: none;
+	position: absolute;
+	top: 27px;
+    right: 0;
+	width: 277px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	background-color: #f8f7f4;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 20px 17px 20px 19px;
+}
+
+.enter-form {
+	position: relative;
+}
+
+.enter-form input[type="text"],
+.enter-form input[type="password"] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 13px 15px;
+	border: 1px solid #d3d3d2;
+	border-radius: 3px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.enter-form label {
+	position: absolute;
+	color: #b2b2b2;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.enter-form label[for="name"] {
+	top: 10px;
+	left: 15px;
+}
+
+.enter-form label[for="pass"] {
+	top: 73px;
+	left: 15px;
+}
+
+.enter-form input[type="text"]:focus + label {
+	top: -15px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #5b9ddf;
+}
+
+.enter-form input[type="password"]:focus + label {
+	top: 48px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #5b9ddf;
+}
+
+.register-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.right-block a {
+	text-decoration: none;
+	border-bottom: 1px solid #a9bbb1;
+	color: #323232;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.enter-form input[type="submit"] {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	background-image: linear-gradient(to bottom, #f26843, #e74a35);
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	padding: 10px 23px;
+	margin-right: 20px;
+}
+
+.log-in-btn,
+.shopping-cart .cart {
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 16px;
+	position: relative;
+	margin-left: 10px;
+}
+
+.log-in-btn {
+	padding: 8px 17px 8px 43px;
+}
+
+.shopping-cart .cart {
+	padding: 8px 35px 8px 43px;
+}
+
+.shopping-cart .cart:before {
+	position: absolute;
+	content: "";
+	width: 21px;
+	height: 20px;
+	background: url(../img/cart.png) no-repeat;
+	top: 6px;
+    left: 16px;
+}
+
+.log-in-btn:before {
+	position: absolute;
+	content: "";
+	width: 21px;
+	height: 19px;
+	background: url(../img/log-in.png) no-repeat;
+	top: 6px;
+    left: 16px;
+}
+
+.log-in:hover  .enter-wrap {
+	display: block;
+}
+
+
 
 .working-info {
 	text-align: right;
