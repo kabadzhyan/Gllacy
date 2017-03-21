@@ -21,7 +21,7 @@ body {
 	padding: 0;
 	width: 674px;
 	margin-right: 26px;
-	margin-left: -20px;
+	margin-left: 15px;
 	list-style: none;
 	display: flex;
 	justify-content: flex-start;
@@ -46,6 +46,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 700;
+	margin-top: 24px;
 }
 
 .main-menu li {
@@ -62,32 +63,24 @@ body {
 	position: relative;
 }
 
+.menu .shopping-cart,
+.menu .log-in,
 .menu .search-btn {
-	position: relative;
-	/*width: 32px;
+	padding-bottom: 6px;
+	display: inline-block;
 	height: 32px;
-	background-color: rgba(255,255,255,0.2);
-	border-radius: 50%;
-	cursor: pointer;*/
 }
 
-.search-btn .search-label {
-	content: "";
-	display: block;
-	position: absolute;
-	top: -9px;
-	left: -17px;
-	transform: translate(-50%);
-	background: rgba(255,255,255,0.2) url(../img/search.png) no-repeat 50% 50%;
-	width: 32px;
-	height: 32px;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-.menu .enter-form {
+.menu .enter-wrap {
 	display: none;
 	position: absolute;
+	top: 30px;
+    right: 0;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	background-color: #f8f7f4;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 20px 15px;
 }
 
 .log-in-btn,
@@ -126,16 +119,70 @@ body {
     left: 16px;
 }
 
-.log-in-btn:hover + .enter-form {
+.log-in:hover  .enter-wrap {
 	display: block;
 }
 
-.search-btn input {
-	display: none;
-	position: absolute;
+.search-btn {
+	position: relative;
+	margin-top: -18px;
+	height: 32px;
 }
 
-.search-label:hover ~ input[type="search"] {
+.search-btn a {
+	display: inline-block;
+	font-size: 0;
+}
+
+.search-btn a:before {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: rgba(255,255,255,0.2) url(../img/search.png) no-repeat 50% 50%;
+	border-radius: 50%;
+}
+
+.search-form {
+	display: none;
+	position: absolute;
+	top: 45px;
+    right: 0;
+	width: 340px;
+	box-sizing: border-box;
+	padding: 20px 15px;
+	border-radius: 5px;
+	background-color: #f8f7f4;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.search-form input[type="search"] {
+	padding: 13px 15px;
+	width: 100%;
+	border: 1px solid #d3d3d2;
+	border-radius: 3px;
+	outline: none;
+}
+
+.search-form label {
+	display: block;
+	position: absolute;
+	color: #b2b2b2;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	top: 31px;
+    left: 30px;
+}
+
+.search-form input[type="search"]:focus + label {
+	top: 5px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #5b9ddf;
+}
+
+.search-btn:hover .search-form {
 	display: block;
 }
 
