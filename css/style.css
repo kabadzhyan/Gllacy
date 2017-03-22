@@ -31,8 +31,23 @@ body {
 	margin-top: -2px;
 }
 
+
 .main-menu a{
-	border-bottom: 1px solid #a9bbb1;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.main-menu a:hover {
+	background: #f7f6f3;
+	border-radius: 16px;
+	color: #333;
+	font-weight: 700;
+	padding: 4px 14px;
+	margin-left: -14px;
+	margin-right: -13px;
+}
+
+.main-menu a:active {
+	box-shadow: 0px 2px 1px 0px rgba(105, 105, 105, 1) inset; 
 }
 
 .menu nav {
@@ -89,6 +104,10 @@ body {
 	height: 32px;
 	background: rgba(255,255,255,0.2) url(../img/search.png) no-repeat 50% 50%;
 	border-radius: 50%;
+}
+
+.search-btn a:hover:before {
+	background: #fff url(../img/search-hover.png) no-repeat 50% 50%;
 }
 
 .search-form {
@@ -201,10 +220,16 @@ body {
 
 .right-block a {
 	text-decoration: none;
-	border-bottom: 1px solid #a9bbb1;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
 	color: #323232;
 	font-size: 13px;
 	line-height: 24px;
+}
+
+.right-block a:hover,
+.right-block a:active {
+	color: #e84d37;
+	border-bottom: 1px solid rgba(232,77,55,0.3);
 }
 
 .enter-form input[type="submit"] {
@@ -214,12 +239,13 @@ body {
 	line-height: 24px;
 	font-weight: 700;
 	background-image: linear-gradient(to bottom, #f26843, #e74a35);
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
 	border-radius: 50px;
 	border: none;
 	outline: none;
 	padding: 10px 23px;
 	margin-right: 20px;
+	cursor: pointer;
 }
 
 .log-in-btn,
@@ -248,6 +274,17 @@ body {
     left: 16px;
 }
 
+.shopping-cart .cart:hover:before {
+	background: url(../img/cart-hover.png) no-repeat;
+}
+
+
+.log-in-btn:hover,
+.shopping-cart .cart:hover {
+	background-color: #fff;
+	color: #323232;
+}
+
 .log-in-btn:before {
 	position: absolute;
 	content: "";
@@ -258,11 +295,13 @@ body {
     left: 16px;
 }
 
+.log-in-btn:hover:before {
+	background: url(../img/log-in-hover.png) no-repeat;
+}
+
 .log-in:hover  .enter-wrap {
 	display: block;
 }
-
-
 
 .working-info {
 	text-align: right;
@@ -313,6 +352,16 @@ body {
 	border-radius: 50px;
 }
 
+.give-me-btn:hover {
+	box-shadow: 0px 2px 2px 0px rgb(172, 16, 0);
+	background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+}
+
+.slide .give-me-btn:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
+  box-shadow: inset 0px 2px 2px 0px #942718;
+}
+
 #btn-1:checked ~ .site-wrapper {
 	background: #849d8f url(../img/ice-cream1.png) no-repeat top center;
 }
@@ -339,6 +388,7 @@ body {
 	height: 15px;
 	border: 2px solid white;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .slide-btns label:hover {
@@ -393,7 +443,7 @@ p {
 	line-height: 24px;
 	font-weight: 700;
 	background-image: linear-gradient(to bottom, #f26843, #e74a35);
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
 	border-radius: 50px;
 }
 
@@ -459,7 +509,7 @@ p {
 	font-weight: 500px;
 	color: #fff;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #a9bbb1;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 	text-decoration: none;
 }
 
@@ -486,7 +536,7 @@ p {
     line-height: 24px;
     font-weight: 700;
     background-image: linear-gradient(to bottom, #f26843, #e74a35);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
     border-radius: 50px;
     padding: 10px 25px;
     text-align: center;
@@ -495,7 +545,6 @@ p {
 .best-item:hover .see-btn {
 	visibility: visible;
 }
-
 
 .best-item:hover {
 	background-color: rgba(255,255,255,0.2);
@@ -640,6 +689,7 @@ p {
 	border: none;
 	outline: none;
 	padding: 9px 15px;
+	cursor: pointer;
 }
 
 .wrapper input::-webkit-input-placeholder {
@@ -716,7 +766,7 @@ p {
 	line-height: 24px;
 	font-weight: 700;
 	background-image: linear-gradient(to bottom, #f26843, #e74a35);
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
 	border-radius: 50px;
 	border: none;
 	outline: none;
@@ -752,6 +802,17 @@ footer .container {
 	border-radius: 50%;
 }
 
+.social a:hover {
+	opacity: 1;
+	border: 3px solid rgba(255,255,255,0.7);
+}
+
+.social a:active {
+	opacity: 1;
+	border: 3px solid rgba(255,255,255,0.7);
+	box-shadow: 0px 2px 1px 0px rgba(136, 136, 136, 1) inset; 
+}
+
 .social .twitter {
 	background: url('../img/twitter.png') no-repeat;
 }
@@ -781,10 +842,6 @@ footer .container {
 	margin-right: 38px;
 }
 
-.links .right {
-	
-}
-
 .left a:first-child {
 	font-weight: 700;
 }
@@ -808,7 +865,7 @@ footer .container {
 }
 
 .links span {
-	border-bottom: 1px solid #9eb2a7;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .copyright {
@@ -819,6 +876,33 @@ footer .container {
 .copyright a{
 	color: #fff;
 	text-decoration: none;
-	border-bottom: 1px solid #9eb2a7;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
+
+.bonus .want-btn:hover,
+.enter-form input[type="submit"]:hover,
+.best-item .see-btn:hover,
+.contacts .feedback-btn:hover,
+.wrapper input[type="submit"]:hover {
+	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 1);
+	background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+}
+
+.bonus .want-btn:active,
+.enter-form input[type="submit"]:active,
+.best-item .see-btn:active,
+.contacts .feedback-btn:active,
+.wrapper input[type="submit"]:active {
+	box-shadow: 0px 2px 2px 0px rgba(148, 39, 24, 1) inset; 
+	background-image: linear-gradient(to bottom, #e74a35, #f26843);
+}
+
+
+.best-item .description:hover,
+.best-item .description:active,
+.links span:hover,
+.links span:active {
+	color: #ffbc9e;
+	border-bottom: 1px solid rgba(255,188,158,0.3);
+}
