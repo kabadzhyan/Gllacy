@@ -809,6 +809,7 @@ p {
 
 .bonus .want-btn {
 	text-decoration: none;
+	display: inline-block;
 	color: #fff;
 	font-size: 18px;
 	line-height: 24px;
