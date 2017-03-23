@@ -575,11 +575,13 @@ body {
 .fat label {
 	position: relative;
 	margin-right: 45px;
+	cursor: pointer;
 }
 
 .topping label {
 	position: relative;
 	margin-right: 49px;
+	cursor: pointer;
 }
 
 .fat label:last-child,
