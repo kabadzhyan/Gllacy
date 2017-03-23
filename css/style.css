@@ -763,10 +763,6 @@ body {
 	padding: 9px 30px;
 }
 
-.pages {
-	border-bottom: 2px solid rgba(255,255,255,0.2);
-}
-
 	body input[name="toggle"] {
 	display: none;
 }
@@ -1145,6 +1141,37 @@ p {
 	border: none;
 	outline: none;
 	padding: 10px 27px;
+}
+
+.pages {
+	border-bottom: 2px solid rgba(255,255,255,0.2);
+	margin-top: 40px;
+	text-align: right;
+	padding-bottom: 35px;
+}
+
+.pages .btn-page {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.pages .on-page {
+	color: #323232;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.pages .prev-page,
+.pages .next-page {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
 }
 
 footer .container {
