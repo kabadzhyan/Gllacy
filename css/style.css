@@ -245,6 +245,19 @@ background-color: rgba(0,0,0,0.5);
 	outline: none;
 }
 
+.search-form input[type="search"]:hover {
+	border: 2px solid #c7c6c5;
+	padding: 12px 14px;
+}
+
+.search-form input[type="search"]:focus {
+	outline: none;
+	border-radius: 3px;
+	border: 2px solid #8fbdec;
+	padding: 12px 14px;
+}
+
+
 .search-form label {
 	display: block;
 	position: absolute;
@@ -326,6 +339,20 @@ background-color: rgba(0,0,0,0.5);
     font-size: 11px;
     line-height: 13px;
     color: #5b9ddf;
+}
+
+.enter-form input[type="text"]:hover,
+.enter-form input[type="password"]:hover {
+	border: 2px solid #c7c6c5;
+	padding: 12px 14px;
+}
+
+.enter-form input[type="text"]:focus,
+.enter-form input[type="password"]:focus {
+	outline: none;
+	border-radius: 3px;
+	border: 2px solid #8fbdec;
+	padding: 12px 14px;
 }
 
 .register-block {
