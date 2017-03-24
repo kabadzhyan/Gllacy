@@ -1403,6 +1403,7 @@ footer .container {
 	color: #999999;
 	margin-bottom: 20px;
 	font-family: "Roboto", "Arial", sans-serif;
+	z-index:5;
 }
 
 .modal-contact-us label {
@@ -1411,6 +1412,7 @@ footer .container {
 	cursor:text;
 	left: 14px;
 	color: #999;
+	z-index:3;
 }
 
 .modal-contact-us input[type="text"]:focus + label,
@@ -1421,12 +1423,12 @@ footer .container {
     color: #5b9ddf;
 }
 
-.modal-contact-us label[for="name"] {
+.modal-contact-us label[for="your-name"] {
 	top: 85px;
 	left: 39px;
 }
 
-.modal-contact-us label[for="email"] {
+.modal-contact-us label[for="your-email"] {
 	top: 154px;
 	left: 39px;
 }
