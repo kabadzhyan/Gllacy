@@ -193,22 +193,17 @@ background-color: rgba(0,0,0,0.5);
 	margin-top: 9px;
 }
 
-.menu .log-in {
-	position: relative;
-}
-
 .menu .shopping-cart,
 .menu .log-in,
 .menu .search-btn {
+	position: relative;
 	padding-bottom: 6px;
 	display: inline-block;
 	height: 32px;
 }
 
 .search-btn {
-	position: relative;
 	margin-top: -18px;
-	height: 32px;
 }
 
 .search-btn a {
@@ -384,6 +379,95 @@ background-color: rgba(0,0,0,0.5);
 	padding: 8px 35px 8px 43px;
 }
 
+.shopping-cart .cart-wrap {
+	position: absolute;
+	display: none;
+	right: 0;
+	top: 27px;
+	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	background-color: #f8f7f4;
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+	width: 540px;
+	box-sizing: border-box;
+	padding: 20px 14px 21px 15px;
+	z-index: 100;
+}
+
+.cart-wrap .cart-item {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.last-item {
+	padding-bottom: 17px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #cacac7;
+}
+
+.cart-item .delete-item {
+	position: absolute;
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: url(../img/cross-small.png) no-repeat 50% 50%;
+	left: 6px;
+	top: 9px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.cart-item span {
+	color: #999;
+}
+
+.item-name {
+	display: flex;
+	align-items: center;
+	padding-left: 26px;
+	width: 280px;
+}
+
+.item-name img {
+	margin-right: 14px;
+}
+
+.item-name p {
+	padding-right: 10px;
+}
+
+.cart-wrap > p {
+	text-align: right;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	margin-top: -8px;
+    margin-bottom: 5px;
+}
+
+.cart-wrap .create-order {
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	background-image: linear-gradient(to bottom, #f26843, #e74a35);
+	box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	padding: 11px 15px 13px 14px;
+	cursor: pointer;
+}
+
 .shopping-cart .full-cart {
 	padding: 8px 16px 8px 43px;
 }
@@ -431,6 +515,10 @@ background-color: rgba(0,0,0,0.5);
 }
 
 .log-in:hover  .enter-wrap {
+	display: block;
+}
+
+.shopping-cart:hover .cart-wrap {
 	display: block;
 }
 
@@ -799,7 +887,7 @@ p {
 .bonus h3 {
 	font-size: 35px;
 	line-height: 41px;
-	font-weight: 700px;
+	font-weight: 700;
 	    margin-top: -5px;
     margin-bottom: 16px;
 }
@@ -807,7 +895,7 @@ p {
 .bonus p {
 	font-size: 18px;
 	line-height: 22px;
-	font-weight: 700px;
+	font-weight: 700;
 	margin-bottom: 43px;
 }
 
@@ -1157,36 +1245,35 @@ p {
 }
 
 .pages {
-	border-bottom: 2px solid rgba(255,255,255,0.2);
-	margin-top: 40px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	margin-top: 45px;
 	text-align: right;
-	padding-bottom: 35px;
+	padding-bottom: 30px;
 }
 
 .pages .btn-page {
 	text-decoration: none;
-	color: #fff;
-	display: inline-block;
-	margin-right: 20px;
-	margin-left: 20px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 16px;
 }
 
 .btn-page:hover {
 	background-color: rgba(255,255,255,0.2);
-	padding: 5px 10px;
+	padding: 3px 8px;
 	border-radius: 50%;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-left: 8px;
+	margin-right: -8px;
 }
 
 .pages .on-page,
 .pages .btn-page:active {
 	color: #323232;
-	background-color: #fff;
-	padding: 5px 10px;
-	border-radius: 50%;
-	margin-right: 10px;
-	margin-left: 10px;
+    background-color: #fff;
+    padding: 3px 8px;
+    border-radius: 50%;
+    margin-right: -8px;
+    margin-left: 8px;
 }
 
 .pages .prev-page,
@@ -1194,6 +1281,14 @@ p {
 	text-decoration: none;
 	color: #fff;
 	display: inline-block;
+}
+
+.pages .prev-page {
+	margin-right: 11px;
+}
+
+.pages .next-page {
+	margin-left: 19px;
 }
 
 footer .container {
@@ -1307,7 +1402,9 @@ footer .container {
 .enter-form input[type="submit"]:hover,
 .best-item .see-btn:hover,
 .contacts .feedback-btn:hover,
-.wrapper input[type="submit"]:hover {
+.wrapper input[type="submit"]:hover,
+.modal-contact-us .send-btn:hover,
+.cart-wrap .create-order:hover {
 	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 1);
 	background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
 }
@@ -1316,7 +1413,9 @@ footer .container {
 .enter-form input[type="submit"]:active,
 .best-item .see-btn:active,
 .contacts .feedback-btn:active,
-.wrapper input[type="submit"]:active {
+.wrapper input[type="submit"]:active,
+.modal-contact-us .send-btn:active,
+.cart-wrap .create-order:active {
 	box-shadow: 0px 2px 2px 0px rgba(148, 39, 24, 1) inset; 
 	background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
@@ -1361,8 +1460,8 @@ footer .container {
 	width: 18px;
 	height: 17px;
 	background: url(../img/cross.png) no-repeat 50% 50%;
-	right: 9px;
-	top: 9px;
+	right: 20px;
+	top: 25px;
 	cursor: pointer;
 	outline: none;
 	border: none;
@@ -1400,7 +1499,8 @@ footer .container {
 	border-radius: 3px;
 	font-size: 16px;
 	line-height: 24px;
-	color: #999999;
+	font-weight: 700;
+	color: #323232;
 	margin-bottom: 20px;
 	font-family: "Roboto", "Arial", sans-serif;
 	z-index:5;
@@ -1421,6 +1521,14 @@ footer .container {
     font-size: 11px;
     line-height: 13px;
     color: #5b9ddf;
+}
+
+.modal-contact-us input[type="text"]:focus,
+.modal-contact-us textarea:focus {
+	outline: none;
+	border-radius: 3px;
+	border: 2px solid #8fbdec;
+	padding: 10px 13px;
 }
 
 .modal-contact-us label[for="your-name"] {
@@ -1449,8 +1557,15 @@ footer .container {
 	border-radius: 3px;
 	font-size: 16px;
 	line-height: 24px;
-	color: #999999;
+	font-weight: 700;
+	color: #323232;
 	margin-bottom: 25px;
+}
+
+.modal-contact-us input:hover,
+.modal-contact-us textarea:hover {
+	border: 2px solid #c7c6c5;
+	padding: 10px 13px;
 }
 
 @keyframes bounce {
